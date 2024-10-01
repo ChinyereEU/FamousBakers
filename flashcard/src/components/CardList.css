@@ -1,0 +1,39 @@
+
+  #Card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+   
+  .card-wrapper{/*affects only navigation buttons, why??*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    /* justify-content: center; */
+  }
+
+
+.navigation-buttons {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* justify-self: center; */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+.nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: gray; /* Change button color to gray */
+    color: white; /* Optional: Change text color to white for better contrast */
+    border: none;
+    border-radius: 5px;
+}

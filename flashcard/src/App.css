@@ -1,0 +1,57 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align:center;
+  position: relative;/*need this & position in .header to both be relative for the page title text & card to be centered*/
+  /* background-color: white; */
+}
+
+
+
+.App::before{
+  content: "";
+  position: fixed;
+  top:0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./assets/images/cakedecor.jpg');
+  /* background-image: url('./assets/images/kelly-neil-eZX1D12IS9w-unsplash.jpg'); */
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.header{
+  color: black;
+  position:relative;
+  top: 0; /*align to top*/
+  width: 100%;
+  text-align: center; /*center the text*/
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  z-index: 1; /*keep header on top of background image*/
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
